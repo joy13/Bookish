@@ -1,0 +1,2 @@
+serviceClass: com.bookish.engineering.client.GreetingService
+path: 1E85950DF92D0340C1C3B7801D9737E9.gwt.rpc
