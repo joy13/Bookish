@@ -1,0 +1,3 @@
+# Module bookish
+# RPC service class, partial path of RPC policy file
+com.bookish.engineering.client.GreetingService, 1E85950DF92D0340C1C3B7801D9737E9.gwt.rpc
