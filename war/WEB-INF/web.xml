@@ -6,19 +6,21 @@
          xmlns="http://java.sun.com/xml/ns/javaee">
 
   <!-- Servlets -->
-  <servlet>
-    <servlet-name>greetServlet</servlet-name>
-    <servlet-class>com.bookish.engineering.server.GreetingServiceImpl</servlet-class>
-  </servlet>
-  
-  <servlet-mapping>
-    <servlet-name>greetServlet</servlet-name>
-    <url-pattern>/bookish/greet</url-pattern>
-  </servlet-mapping>
   
   <!-- Default page to serve -->
   <welcome-file-list>
     <welcome-file>Bookish.html</welcome-file>
   </welcome-file-list>
+  
+  <!-- Servlets -->
+ <servlet>
+    <servlet-name>bookServlet</servlet-name>
+    <servlet-class>com.bookish.engineering.server.BookServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>bookServlet</servlet-name>
+    <url-pattern>/bookish/books</url-pattern>
+  </servlet-mapping>
 
 </web-app>

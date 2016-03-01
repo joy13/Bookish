@@ -11,12 +11,92 @@ h1 {
 }
 
 /** Most GWT widgets already have a style name defined */
-.gwt-DialogBox {
-  width: 400px;
+.Popup {
+  width: 280px;
+  height: 370px;
+  border: 5px solid #ccc;
+    border-radius: 6px 6px 6px 3px;
+    background: white;
+    line-height: 7px;
+    z-index: auto;
+}
+
+.CancelButton {
+	float:right;
+	cursor: pointer;
+	box-sizing: content-box;
+  background: rgba(0,0,0,0);
+  padding-right: 40px;
+  padding-top: 10px;
+  border: none;
+}
+
+.Caption {
+   background: #F1F1F1;
+   width:273px;
+  padding: 10px 5px 10px 2px;
+  text-align: center;
+  -o-text-overflow: clip;
+	text-overflow: clip;	
+	letter-spacing: 1px;
+  box-sizing: content-box;
+  cursor: default;
+  font: normal normal 15px/10px Helvetica, sans-serif;
+  color: #46a346;
+  border-bottom: 1px solid #bbbbbb;
+  border-top: 1px solid #D2D2D2;
+  opacity: 1;
+}
+
+.AddButton{	
+	cursor: pointer;
+	box-sizing: content-box;
+  background: rgba(0,0,0,0);
+  padding-left: 40px;
+  border: none;
+  float:right;
+  position:static;
+  margin-bottom: 20px;
+  margin-right: 25px;
+}
+
+.SubmitButton {
+	cursor: pointer;
+	box-sizing: content-box;
+  background: rgba(0,0,0,0);
+  padding-left: 80px;
+  border: none;
+}
+
+.HeartPanel {
+	cursor: pointer;
+}
+
+.DeleteButton {
+  width: 20px;
+  height: 25px;
+  box-sizing: content-box;
+  background: rgba(0,0,0,0);
+  padding-left: 40px;
+border: none;
+cursor: pointer;
+}
+
+.Label {
+	font: normal normal 16px Helvetica, sans-serif;
+	letter-spacing: 1px;
+}
+
+.titles {
+	font:normal normal 16px Book Antiqua, sans-serif;
+	letter-spacing: 1px;
 }
 
 .gwt-TabLayoutPanel {
-	margin: 100px;
+	margin-top: 20px;
+	margin-right: 100px;
+	margin-bottom: 100px;
+	margin-left: 350px;
 	vertical-align: top;
 	horizontal-align: center;
 }
@@ -32,4 +112,40 @@ h1 {
 /** Set ids using widget.getElement().setId("idOfElement") */
 #closeButton {
   margin: 15px 6px 6px;
+}
+
+.negativeChange {
+  color: red;
+}
+
+.errorMessage {
+  color: red;
+}
+
+.AddPanel {
+	width:100%;
+	height:100%;
+}
+
+.WishList {
+  margin-top: 200 px;
+  margin-bottom:50px;
+  margin-left:5px;
+  margin-right:25px;
+}
+
+.TitleColumn {
+	width: 100%;
+	text-align: left;
+}
+
+.ListColumn {
+	width: 50%;
+	text-align: left;
+}
+
+.gwt-TabLayoutPanelTab {
+	margin-left: 15px !important;
+	width: 80px;
+	text-align: center;
 }
