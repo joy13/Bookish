@@ -1,6 +1,5 @@
 package com.bookish.engineering.client;
 
-<<<<<<< HEAD
 import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -38,7 +37,6 @@ import com.google.gwt.user.client.ui.HTML;
 import com.google.gwt.user.client.ui.LayoutPanel;
 import com.google.gwt.user.client.ui.RootLayoutPanel;
 import com.google.gwt.user.client.ui.TabLayoutPanel;
->>>>>>> b399e35b0a978fa068798ad4bc383d2787964b10
 import com.google.gwt.user.client.ui.Widget;
 
 /**
