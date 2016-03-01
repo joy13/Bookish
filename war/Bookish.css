@@ -11,6 +11,7 @@ h1 {
 }
 
 /** Most GWT widgets already have a style name defined */
+<<<<<<< HEAD
 .Popup {
   width: 280px;
   height: 370px;
@@ -97,6 +98,14 @@ cursor: pointer;
 	margin-right: 100px;
 	margin-bottom: 100px;
 	margin-left: 350px;
+=======
+.gwt-DialogBox {
+  width: 400px;
+}
+
+.gwt-TabLayoutPanel {
+	margin: 100px;
+>>>>>>> b399e35b0a978fa068798ad4bc383d2787964b10
 	vertical-align: top;
 	horizontal-align: center;
 }
@@ -113,6 +122,7 @@ cursor: pointer;
 #closeButton {
   margin: 15px 6px 6px;
 }
+<<<<<<< HEAD
 
 .negativeChange {
   color: red;
@@ -149,3 +159,5 @@ cursor: pointer;
 	width: 80px;
 	text-align: center;
 }
+=======
+>>>>>>> b399e35b0a978fa068798ad4bc383d2787964b10

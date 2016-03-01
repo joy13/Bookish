@@ -1,5 +1,6 @@
 package com.bookish.engineering.client;
 
+<<<<<<< HEAD
 import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -29,12 +30,22 @@ import com.google.gwt.user.client.ui.LayoutPanel;
 import com.google.gwt.user.client.ui.RootLayoutPanel;
 import com.google.gwt.user.client.ui.TabLayoutPanel;
 import com.google.gwt.user.client.ui.VerticalPanel;
+=======
+import com.google.gwt.core.client.EntryPoint;
+import com.google.gwt.dom.client.Style.Unit;
+import com.google.gwt.layout.client.Layout.Alignment;
+import com.google.gwt.user.client.ui.HTML;
+import com.google.gwt.user.client.ui.LayoutPanel;
+import com.google.gwt.user.client.ui.RootLayoutPanel;
+import com.google.gwt.user.client.ui.TabLayoutPanel;
+>>>>>>> b399e35b0a978fa068798ad4bc383d2787964b10
 import com.google.gwt.user.client.ui.Widget;
 
 /**
  * Entry point classes define <code>onModuleLoad()</code>.
  */
 public class Bookish implements EntryPoint {
+<<<<<<< HEAD
 	private static final Logger LOG = Logger.getLogger(Bookish.class.getName());
 	private TabLayoutPanel tabLayoutPanel = new TabLayoutPanel(10, Unit.EM);
 	private LayoutPanel layoutPanel = new LayoutPanel();
@@ -55,12 +66,18 @@ public class Bookish implements EntryPoint {
 	public void setAddToWishlistButton(Button addToWishlistButton) {
 		this.addToWishlistButton = addToWishlistButton;
 	}
+=======
+	private TabLayoutPanel tabLayoutPanel = new TabLayoutPanel(10, Unit.EM);
+	private LayoutPanel layoutPanel = new LayoutPanel();
+	
+>>>>>>> b399e35b0a978fa068798ad4bc383d2787964b10
 	/**
 	 * This is the entry point method.
 	 */
 	public void onModuleLoad() {
 		Widget header = new HTML("<h1>Bookish Dashboard</h1>");
 		layoutPanel.add(header);
+<<<<<<< HEAD
 		wishlistTable.setCellSpacing(10);
 		wishlistTable.setStylePrimaryName("WishList");
 		addPanel.setStylePrimaryName("AddPanel");
@@ -231,5 +248,15 @@ public class Bookish implements EntryPoint {
 	private void displayError(String error) {
 		errorMsgLabel.setText("Error: " + error);
 		errorMsgLabel.setVisible(true);
+=======
+		tabLayoutPanel.add(new HTML("this"), "Wishlist");
+		tabLayoutPanel.add(new HTML("that"), "Favourites");
+		tabLayoutPanel.add(new HTML("and this"), "Library");
+		tabLayoutPanel.selectTab(0);
+		tabLayoutPanel.setWidth("50%");
+		RootLayoutPanel rootLayoutPanel = RootLayoutPanel.get();
+		rootLayoutPanel.add(layoutPanel);
+		rootLayoutPanel.add(tabLayoutPanel);
+>>>>>>> b399e35b0a978fa068798ad4bc383d2787964b10
 	}
 }
